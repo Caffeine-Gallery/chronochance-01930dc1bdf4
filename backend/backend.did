@@ -1,0 +1,11 @@
+service : {
+  generateRandomTime: () -> (nat);
+  getGameState: () ->
+   (record {
+      currentScore: nat;
+      highScore: nat;
+      isActive: bool;
+    }) query;
+  playerReaction: () -> (text);
+  startGame: (nat) -> (text);
+}
